@@ -1,0 +1,17 @@
+<!-- searchapp/templates/searchapp/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+</head>
+<body>
+    <h1>Search Page</h1>
+    <form method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    {% if query %}
+    <p>You searched for: "{{ query }}"</p>
+    {% endif %}
+</body>
+</html>
